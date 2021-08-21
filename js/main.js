@@ -96,6 +96,7 @@ function finalizaJogo() {
 }
 
 function reiniciaJogo() {
+    radom(lista.length, 0);
     campo.attr('disabled', false);
     campo.val('');
     $('#contador-palavras').text(0);
@@ -105,7 +106,6 @@ function reiniciaJogo() {
     campo.removeClass('campo-desativado');
     campo.removeClass('borda-vermelha');
     campo.removeClass('borda-verde');
-    radom(lista.length, 0);
 }
 
 function radom(max, min) {
