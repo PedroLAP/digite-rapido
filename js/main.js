@@ -58,18 +58,8 @@ function inicializaContadores() {
 }
 
 function inicializaMarcadores() {
-    let frase = $('.frase').text();
     campo.on('input', () => {
-        let digitado = campo.val();
-        let comparavel = frase.substr(0, digitado.length);
-
-        if (digitado == comparavel) {
-            campo.addClass('borda-verde');
-            campo.removeClass('borda-vermelha');
-        } else {
-            campo.addClass('borda-vermelha');
-            campo.removeClass('borda-verde');
-        }
+        ehIgual(true);
     });
 }
 
@@ -93,6 +83,7 @@ function finalizaJogo() {
     $('#botao-reiniciar').attr('disabled', false);
     campo.addClass('campo-desativado');
     inserePlacar();
+    ehIgual(false);
 }
 
 function reiniciaJogo() {
@@ -106,10 +97,10 @@ function reiniciaJogo() {
     campo.removeClass('campo-desativado');
     campo.removeClass('borda-vermelha');
     campo.removeClass('borda-verde');
+    inicializaMarcadores();
 }
 
 function radom(max, min) {
-
     let valor = Math.random() * (max - min) + min;
     let numSorteado = Math.floor(valor);
 
@@ -123,5 +114,26 @@ function radom(max, min) {
 
         $('.frase').text(texto);
         $('#tempo-digitacao').text(tempo);
+    }
+}
+
+function ehIgual(boolean = false) {
+    let frase = $('.frase').text();
+
+    let digitado = campo.val();
+    let comparavel;
+
+    if (boolean) {
+        comparavel = frase.substr(0, digitado.length);
+    } else {
+        comparavel = frase;
+    }
+
+    if (digitado == comparavel) {
+        campo.addClass('borda-verde');
+        campo.removeClass('borda-vermelha');
+    } else {
+        campo.addClass('borda-vermelha');
+        campo.removeClass('borda-verde');
     }
 }
