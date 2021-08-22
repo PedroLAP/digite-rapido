@@ -4,26 +4,26 @@ const tempoInicial = $('#tempo-digitacao').text();
 let campo = $('.campo-digitacao');
 
 const lista = [
-    { texto: 'Lorem ipsum dolor sit amet.', tempo: 7 },
-    { texto: 'Consectetur adipisicing elit.', tempo: 7 },
-    { texto: 'Sed do eiusmod temporincididunt ut labore et dolore magna aliqua.', tempo: 10 },
-    { texto: 'Carlos irá hoje ao supermercado.', tempo: 7 },
-    { texto: 'Olá, seja muito bem vindo a nossa loja!', tempo: 7 },
-    { texto: 'Amiga você viu o que passou ontem no jornal?', tempo: 7 },
-    { texto: 'Abacaxi não faz xixi.', tempo: 7 },
-    { texto: 'Irineu, você não sabe nem eu.', tempo: 7 },
-    { texto: 'Giovanna, pode me ligar? Beijos', tempo: 7 },
-    { texto: 'Hoje o dia está muito lindo!', tempo: 7 },
-    { texto: 'Que sol maravilhoso!', tempo: 7 },
-    { texto: 'Mara, Mara, Maravilha', tempo: 7 },
-    { texto: 'Nem só de pão vive o homem.', tempo: 7 },
-    { texto: 'Um passarinho não faz verão.', tempo: 7 },
-    { texto: 'Não me siga, porque eu também estou perdido.', tempo: 10 },
-    { texto: 'Fala docinho de cocô (a feia olha), não é você não rapadura.', tempo: 12 },
-    { texto: 'Eu não vendo meia dose, porque você não tem meia boca.', tempo: 10 },
-    { texto: 'Só vendo fiado para pessoas acima dos 90 anos, acompanhada com os pais.', tempo: 12 },
-    { texto: 'Mamãe quero comer!', tempo: 5 },
-    { texto: 'Cavalo dado não se olha os dentes.', tempo: 7 }
+    { texto: 'Lorem ipsum dolor sit amet.', tempo: 15 },
+    { texto: 'Consectetur adipisicing elit.', tempo: 15 },
+    { texto: 'Sed do eiusmod temporincididunt ut labore et dolore magna aliqua.', tempo: 20 },
+    { texto: 'Carlos irá hoje ao supermercado.', tempo: 12 },
+    { texto: 'Olá, seja muito bem vindo a nossa loja!', tempo: 15 },
+    { texto: 'Amiga você viu o que passou ontem no jornal?', tempo: 15 },
+    { texto: 'Abacaxi não faz xixi.', tempo: 10 },
+    { texto: 'Irineu, você não sabe nem eu.', tempo: 12 },
+    { texto: 'Giovanna, pode me ligar? Beijos', tempo: 12 },
+    { texto: 'Hoje o dia está muito lindo!', tempo: 12 },
+    { texto: 'Que sol maravilhoso!', tempo: 10 },
+    { texto: 'Mara, Mara, Maravilha', tempo: 10 },
+    { texto: 'Nem só de pão vive o homem.', tempo: 12 },
+    { texto: 'Um passarinho não faz verão.', tempo: 12 },
+    { texto: 'Não me siga, porque eu também estou perdido.', tempo: 15 },
+    { texto: 'Fala docinho de cocô (a feia olha), não é você não rapadura.', tempo: 20 },
+    { texto: 'Eu não vendo meia dose, porque você não tem meia boca.', tempo: 20 },
+    { texto: 'Só vendo fiado para pessoas acima dos 90 anos, acompanhada com os pais.', tempo: 20 },
+    { texto: 'Mamãe quero comer!', tempo: 8 },
+    { texto: 'Cavalo dado não se olha os dentes.', tempo: 12 }
 ];
 
 let paramValue = -1;
